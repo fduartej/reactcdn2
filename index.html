@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React CRUD Example with Contact Form and Modal</title>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Cargar todos los componentes en el orden correcto -->
+    <script type="text/babel" src="./js/components/CrudView.js"></script>
+    <script type="text/babel" src="./js/components/UserForm.js"></script>
+    <script type="text/babel" src="./js/components/UserList.js"></script>
+    <script type="text/babel" src="./js/components/ContactForm.js"></script>
+    <script type="text/babel" src="./js/components/Modal.js"></script>
+    <script type="text/babel" src="./js/App.js"></script>
+
+    <script type="text/babel">
+      // Renderizar la aplicación principal
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
